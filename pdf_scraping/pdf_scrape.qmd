@@ -1,0 +1,33 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+
+```{r}
+# Install and load the required packages
+install.packages("pdftools")
+library(pdftools)
+
+# Specify the path to your PDF file
+pdf_file <- "U.S. Border Patrol Monthly Encounters (FY 2000 - FY 2020) (508).pdf"
+
+# Extract the table from the first page
+table <- pdf_data(pdf_file)
+
+# View the extracted table
+#View(table)
+
+# Save the extracted table as a CSV file
+#write.csv(table, "extracted_table_page1.csv", row.names = FALSE)
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
